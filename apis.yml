@@ -1,8 +1,25 @@
 aid: sarla-aviation
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sarla-aviation.png
 name: Sarla Aviation
-description: 'Sarla Aviation is a company surfaced as a portfolio company of accel and added to the API
-  Evangelist network as a stub for enrichment. Sector: manufacturing. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Sarla Aviation is an Indian advanced air mobility company building electric vertical
+  takeoff and landing (eVTOL) aircraft for urban transportation. Its flagship flying taxi, Shunya,
+  uses a hybrid-electric propulsion system (seven electric units, dual battery packs, and a sustainable
+  aviation fuel tank) to reach up to 250 km/h with a range up to 800 km and 150 km fully electric,
+  in cabin configurations spanning 6-seat, 4-seat, cargo, and ambulance variants. Founded by former
+  Lilium engineers Rakesh Gaonkar and Adrian Schmidt, the company is a portfolio company of Accel.
+  The public website exposes no developer, API, or technical integration surface as of this enrichment
+  pass; this profile captures corporate identity, legal, and domain-security signals only.'
 url: https://raw.githubusercontent.com/api-evangelist/sarla-aviation/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Manufacturing
+- Aviation
+- eVTOL
+- Urban Air Mobility
+- Advanced Air Mobility
+- Transportation
+- Electric Aircraft
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/sarla-aviation-domain-security.yml
 - type: Website
   url: https://www.sarla-aviation.com/
+- type: Blog
+  url: https://www.sarla-aviation.com/news-stories
+- type: Support
+  url: https://www.sarla-aviation.com/legal/contact
+- type: TermsOfService
+  url: https://www.sarla-aviation.com/legal/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://www.sarla-aviation.com/legal/privacy-policy
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 1
+  pass: local-v1
